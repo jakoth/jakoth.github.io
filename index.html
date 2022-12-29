@@ -6,7 +6,6 @@ body {
   padding: 25px;
   background-color: white;
   color: black;
-
 }
 
 .dark-mode {
@@ -25,7 +24,7 @@ body {
 <header class="body-font">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <a class="flex title-font font-medium items-center mb-4 md:mb-0">
-            <span class="ml-3 text-xl"><p>Jainesh Kothari</p></span>
+            <span class="ml-3 text-xl">Jainesh Kothari</span>
             <span class="ml-3 text-s">(@jakoth)</span>
         </a>
         <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l  md:border-gray-400	flex flex-wrap items-center text-base justify-center">
@@ -44,7 +43,7 @@ body {
                 function myFunction() {
                 const btn = document.getElementById('btn');
                 var color = btn.style.backgroundColor;
-                btn.textContent = btn.textContent === 'Prefer the light?' ? 'Prefer the dark?' : 'Prefer the light?';
+                btn.textContent = btn.textContent === 'Prefer the light?' ? 'Prefer the dark?':'Prefer the light?';
                 color = btn.style.backgroundColor = color === 'silver' ? 'bg-gray-100' : 'silver';
                  var element = document.body;
                 element.classList.toggle("dark-mode");
@@ -56,17 +55,28 @@ body {
             <img class="object-cover object-center rounded" alt="hero" src="withdadogs.jpg">
         </div>
         <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-            <h1 class="title-font sm:text-4xl text-3l mb-4 font-small">Hi, Jainesh here!
+            <h1 class="title-font sm:text-4xl text-3l mb-4 font-small">Hi, Jainesh here! ----
             </h1>
             <p class="mb-8 leading-relaxed">I am studying Computer science & engineering as a 2nd year at the Ohio State University. I like learning unique concepts & exploring creative solutions. Currently, I have taken an interest in Java & Databases like Postgresql.</p>
             <div class="flex justify-center">
-                <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Switch modes?</button>
+                <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"> <a href = "https://github.com/jakoth" target="_blank"> Here's a list of ongoing (& completed) projects! </a></button>
             </div>
         </div>
     </div>
 </section>
+
+<section class="body-font">
+    <div class="container px-5 py-24 mx-auto">
+        <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
+            <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font"> Contact me here --} </h1>
+            <button class="flex-shrink-0 text-white bg-gray-800 border-2 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg mt-10 sm:mt-0"> <a href = "mailto:kothari.96@osu.edu">Email</a></button>
+            <button class="flex-shrink-0 text-white bg-gray-800 border-2 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg mt-10 sm:mt-0"> <a href = "https://www.linkedin.com/in/jainesh-kothari/" target="_blank">Linkedin</a></button>
+            <button class="flex-shrink-0 text-white bg-gray-800 border-2 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg mt-10 sm:mt-0"> <a href = "https://github.com/jakoth" target="_blank">Github</a></button>
+        </div>
+    </div>
+</section>
+
 <h1>Hello World</h1>
 <p> Hosted via Github. Hello there. </p>
 </body>
 
-</html>
